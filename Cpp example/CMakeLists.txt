@@ -1,12 +1,11 @@
-add_executable(blink
-        blink.cpp
-        )
+cmake_minimum_required(VERSION 3.0.0)
+project(blink VERSION 0.1.0)
 
-# Pull in our pico_stdlib which pulls in commonly used features
-target_link_libraries(blink pico_stdlib)
+include(CTest)
+enable_testing()
 
-# create map/bin/hex file etc.
-pico_add_extra_outputs(blink)
+add_executable(blink main.cpp)
 
-# add url via pico_set_program_url
-example_auto_set_url(blink)
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
