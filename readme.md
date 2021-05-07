@@ -1,3 +1,4 @@
+NOTE: Not working yet. I will update this as soon as possible
 - [1. MicroPython configuration](#1-micropython-configuration)
   - [1.1. Install MicroPython on the RPI Pico](#11-install-micropython-on-the-rpi-pico)
   - [1.2. Install Python on your machine](#12-install-python-on-your-machine)
@@ -12,12 +13,12 @@
 
 # 1. MicroPython configuration
 ## 1.1. Install MicroPython on the RPI Pico
-1. Go to [rp2040 documentation site](GettingStartedWithMicroPython) and download U2F file
+1. Go to [rp2040 documentation site](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython) and download U2F file
 2. Connect the pico to your computer while pressing on `BOOTSEL` button
 3. Copy the U2F file on the Pico's filesystem
 
 ## 1.2. Install Python on your machine
-1. Go to [Python website](DownloadPython) and download the last version of Python
+1. Go to [Python website](https://www.python.org/downloads/) and download the last version of Python
 2. Install the downloaded file on your machine
 
 ## 1.3. Setup VS Code
@@ -32,6 +33,7 @@
 4. There is buttons on the bottom of the window to run or upload code
 
 # 2. C++ configuration
+**NOT WORKING YET**
 
 ## 2.1. Setup VS Code
 1. Open VS Code and go to extension tab
@@ -40,7 +42,7 @@
 4. Search for `c++` and install *C/C++* extension
 
 ## 2.2. Install cMake on your computer
-1. Go to [cMake website](CMakeDownload), download and install cMake for your machine
+1. Go to [cMake website](https://cmake.org/download/), download and install cMake for your machine
    1. During the installation, chech `Add CMake to the system PATH for all users`
 
 ## 2.3. Configure VS Code
@@ -55,7 +57,11 @@
 1. In a new VS Code project, enter the command `CMake: Quick Start`, then select `Executable` and the correct kit `GCC for arm-none-eabi`, then enter a project name
 2. Click the build button on the bottom of the window
 
-[GettingStartedWithMicroPython]: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython
-[GettingStartedWithC]: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-c
-[DownloadPython]: https://www.python.org/downloads/
-[ARMDeveloper]: https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+GettingStartedWithMicroPython: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython
+GettingStartedWithC: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-c
+DownloadPython: https://www.python.org/downloads/
+ARMDeveloper: https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+
+https://www.element14.com/community/community/raspberry-pi/blog/2021/01/24/working-with-the-raspberry-pi-pico-with-windows
+https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
+https://www.electronicshub.org/program-raspberry-pi-pico-with-visual-studio-code/
