@@ -43,7 +43,7 @@
 4. There is buttons on the bottom of the window to run or upload code and connect the board to VS Code
 ![Run project](Images/Capture%20d’écran%202021-05-12%20082523.jpg)
 
-A project example can be found in the MicroPython branch of this repository.
+A project example can be found in the MicroPython-example branch of this repository.
 
 # 2. C++ configuration (Not working...)
 
@@ -93,6 +93,8 @@ ms-vscode.cmake-tools`
 1. In a new VS Code project, enter the command `CMake: Quick Start`, then select `Executable` and the correct kit `GCC for arm-none-eabi`, then enter a project name
 2. Click the build button on the bottom of the window
 
+A project example can be found in the c-example branch of this repository.
+
 # 3. C++ configuration using PlateformIO and arduino libraries
 Make sure to have python installed (Step [1.2. Install Python on your machine](#12-install-python-on-your-machine))
 ## 3.1. Setup VS Code
@@ -122,3 +124,5 @@ upload_protocol = picotool
 ```
 2. To buil or upload your project, the tasks can be found in the PlatformIO plug-in
 ![Build or Upload project](Images/Capture%20d’écran%202021-05-12%20100221.jpg)
+
+A project example can be found in the C-PlatformIO-example branch of this repository.
