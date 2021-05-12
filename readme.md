@@ -19,7 +19,7 @@ NOTE: Not working yet. I will update this as soon as possible
 1. Go to [rp2040 documentation site](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython) and download U2F file
 2. Connect the pico to your computer while pressing on `BOOTSEL` button
 3. Copy the U2F file on the Pico's filesystem
-![Install MicroPython on PRI Pico](Images/ezgif-2-47fa67ce54f8.gif)
+![Install MicroPython on PRI Pico](Images/MicroPython-FINAL.gif)
 
 ## 1.2. Install Python on your machine
 1. Go to [Python website](https://www.python.org/downloads/) and download the last version of Python
