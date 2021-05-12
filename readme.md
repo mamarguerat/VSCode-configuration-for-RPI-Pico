@@ -1,4 +1,3 @@
-NOTE: Not working yet. I will update this as soon as possible
 - [1. MicroPython configuration](#1-micropython-configuration)
   - [1.1. Install MicroPython on the RPI Pico](#11-install-micropython-on-the-rpi-pico)
   - [1.2. Install Python on your machine](#12-install-python-on-your-machine)
