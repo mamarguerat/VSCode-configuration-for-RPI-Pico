@@ -67,8 +67,14 @@ A project example can be found in the MicroPython branch of this repository.
 
 # 3. C++ configuration using PlateformIO and arduino libraries
 ## 3.1. Setup VS Code
+1. Open VS Code and go to extension tab
+2. Search for `PlatformIO` and install *PlatformIO IDE* extension `platformio.platformio-ide`
 
 ## 3.2. Start a new project
+1. Open the PIO Home window and click on `New Project`
+![Open PIO Home](Images/Capture%20d’écran%202021-05-12%20090233.jpg)
+2. Choose a name for your project and select your board and the Arduino framework
+![New PIO Project](Images/Capture%20d’écran%202021-05-12%20090459.jpg)
 
 GettingStartedWithMicroPython: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython
 GettingStartedWithC: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-c
