@@ -12,7 +12,9 @@ NOTE: Not working yet. I will update this as soon as possible
   - [2.4. Use VS Code to program RPI Pico](#24-use-vs-code-to-program-rpi-pico)
 - [3. C++ configuration using PlateformIO and arduino libraries](#3-c-configuration-using-plateformio-and-arduino-libraries)
   - [3.1. Setup VS Code](#31-setup-vs-code)
+  - [Install drivers](#install-drivers)
   - [3.2. Start a new project](#32-start-a-new-project)
+  - [Build and updload](#build-and-updload)
 
 # 1. MicroPython configuration
 ## 1.1. Install MicroPython on the RPI Pico
@@ -70,17 +72,26 @@ A project example can be found in the MicroPython branch of this repository.
 1. Open VS Code and go to extension tab
 2. Search for `PlatformIO` and install *PlatformIO IDE* extension `platformio.platformio-ide`
 
+## Install drivers
+1. Go to [Zadig website](https://zadig.akeo.ie/) and download Zadig
+2. Open Zadig and select `RP2 Boot (Interface 1)` and the `WinUSB` driver
+3. Click on Install Driver
+![Install driver](Images/Capture%20d’écran%202021-05-12%20100915.jpg)
+
 ## 3.2. Start a new project
 1. Open the PIO Home window and click on `New Project`
 ![Open PIO Home](Images/Capture%20d’écran%202021-05-12%20090233.jpg)
 2. Choose a name for your project and select your board and the Arduino framework
 ![New PIO Project](Images/Capture%20d’écran%202021-05-12%20090459.jpg)
 
-GettingStartedWithMicroPython: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython
-GettingStartedWithC: https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-c
-DownloadPython: https://www.python.org/downloads/
-ARMDeveloper: https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
-
-https://www.element14.com/community/community/raspberry-pi/blog/2021/01/24/working-with-the-raspberry-pi-pico-with-windows
-https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads
-https://www.electronicshub.org/program-raspberry-pi-pico-with-visual-studio-code/
+## Build and updload
+1. Before uploading a project for the first time. Add 2 lines to `platformio.ini` file
+On Windows use the drive letter when the pico is connected in BOOTSEL mode
+On MacOS use `Volumes/RPI-RP2`
+On Linux use the path where the volume is mounted
+```
+upload_port = E:\
+upload_protocol = picotool
+```
+2. To buil or upload your project, the tasks can be found in the PlatformIO plug-in
+![Build or Upload project](Images/Capture%20d’écran%202021-05-12%20100221.jpg)
