@@ -71,7 +71,7 @@ A video can be found on [YouTube](https://youtu.be/mUF9xjDtFfY)
 4. Open a Developer Command Prompt, go to your folder et add pico-skd to PATH
 ```
 cd C:\Pico
-setx PICO_SDK_PATH "..\..\pico-sdk"
+setx PICO_SDK_PATH "C:\Pico\pico-sdk"
 ```
 
 ## 2.3. Setup VS Code
@@ -85,7 +85,7 @@ ms-vscode.cmake-tools`
 ### 2.4.1. Configure CMake Tools
 1. Go to *CMake tools configuration extension settings*
 2. Scroll to *Cmake: Configure environment*
-3. Click on Add Item and add `PICO_SDK_PATH` and the value is the pico-sdk folder's path `..\..\pico-sdk`
+3. Click on Add Item and add `PICO_SDK_PATH` and the value is the pico-sdk folder's path `C:\Pico\pico-sdk`
 4. Scroll to *Cmake: Generator*
 5. Type `NMake Makefiles`
 
