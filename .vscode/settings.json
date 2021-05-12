@@ -1,5 +1,4 @@
 {
-    "cmake.configureOnOpen": true,
     "python.linting.enabled": true,
     "python.analysis.typeshedPaths": [
         ".vscode\\Pico-Stub"
