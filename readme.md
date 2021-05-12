@@ -4,16 +4,16 @@ NOTE: Not working yet. I will update this as soon as possible
   - [1.2. Install Python on your machine](#12-install-python-on-your-machine)
   - [1.3. Setup VS Code](#13-setup-vs-code)
   - [1.4. Use VS Code to program RPI Pico](#14-use-vs-code-to-program-rpi-pico)
-- [2. C++ configuration](#2-c-configuration)
+- [2. C++ configuration (Not working...)](#2-c-configuration-not-working)
   - [2.1. Install softwares and compilers](#21-install-softwares-and-compilers)
     - [2.1.1. GCC compiler](#211-gcc-compiler)
     - [2.1.2. Install cMake on your computer](#212-install-cmake-on-your-computer)
     - [2.1.3. Install C++ for Visual Studio](#213-install-c-for-visual-studio)
-  - [Download and configure PICO SDK](#download-and-configure-pico-sdk)
-  - [2.2. Setup VS Code](#22-setup-vs-code)
-  - [2.3. Configure VS Code](#23-configure-vs-code)
-    - [2.3.1. Configure CMake Tools](#231-configure-cmake-tools)
-  - [2.4. Use VS Code to program RPI Pico](#24-use-vs-code-to-program-rpi-pico)
+  - [2.2. Download and configure PICO SDK](#22-download-and-configure-pico-sdk)
+  - [2.3. Setup VS Code](#23-setup-vs-code)
+  - [2.4. Configure VS Code](#24-configure-vs-code)
+    - [2.4.1. Configure CMake Tools](#241-configure-cmake-tools)
+  - [2.5. Use VS Code to program RPI Pico](#25-use-vs-code-to-program-rpi-pico)
 - [3. C++ configuration using PlateformIO and arduino libraries](#3-c-configuration-using-plateformio-and-arduino-libraries)
   - [3.1. Setup VS Code](#31-setup-vs-code)
   - [3.2. Install drivers](#32-install-drivers)
@@ -46,7 +46,8 @@ NOTE: Not working yet. I will update this as soon as possible
 
 A project example can be found in the MicroPython branch of this repository.
 
-# 2. C++ configuration
+# 2. C++ configuration (Not working...)
+
 Make sure to have python installed (Step [1.2. Install Python on your machine](#12-install-python-on-your-machine))
 A video can be found on [YouTube](https://youtu.be/mUF9xjDtFfY)
 
@@ -64,7 +65,7 @@ A video can be found on [YouTube](https://youtu.be/mUF9xjDtFfY)
 1. Go to [Microsoft website](https://visualstudio.microsoft.com/fr/downloads/) and scroll to "Build Tools for Visual Studio 2019" and click on Download
 2. Run the file and select *C++ build tools* and click install
 
-## Download and configure PICO SDK
+## 2.2. Download and configure PICO SDK
 1. Go to the [GitHub repository](https://github.com/raspberrypi/pico-sdk) and download the repository
 2. Go to the [GitHub examples repository](https://github.com/raspberrypi/pico-examples) and download the repository
 3. Put these repositories in a folder on your machine, for example `C:\Pico`
@@ -74,22 +75,22 @@ cd C:\Pico
 setx PICO_SDK_PATH "..\..\pico-sdk"
 ```
 
-## 2.2. Setup VS Code
+## 2.3. Setup VS Code
 1. Open VS Code and go to extension tab
 2. Search for `cortex` and install *Cortex-Debug* extension `marus25.cortex-debug`
 3. Search for `cmake` and install *CMake Tools* extension `
 ms-vscode.cmake-tools`
 4. Search for `c++` and install *C/C++* extension `ms-vscode.cpptools`
 
-## 2.3. Configure VS Code
-### 2.3.1. Configure CMake Tools
+## 2.4. Configure VS Code
+### 2.4.1. Configure CMake Tools
 1. Go to *CMake tools configuration extension settings*
 2. Scroll to *Cmake: Configure environment*
 3. Click on Add Item and add `PICO_SDK_PATH` and the value is the pico-sdk folder's path `..\..\pico-sdk`
 4. Scroll to *Cmake: Generator*
 5. Type `NMake Makefiles`
 
-## 2.4. Use VS Code to program RPI Pico
+## 2.5. Use VS Code to program RPI Pico
 1. In a new VS Code project, enter the command `CMake: Quick Start`, then select `Executable` and the correct kit `GCC for arm-none-eabi`, then enter a project name
 2. Click the build button on the bottom of the window
 
