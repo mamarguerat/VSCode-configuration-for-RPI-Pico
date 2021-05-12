@@ -24,11 +24,13 @@
 1. Go to [rp2040 documentation site](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython) and download U2F file
 2. Connect the pico to your computer while pressing on `BOOTSEL` button
 3. Copy the U2F file on the Pico's filesystem
+
 ![Install MicroPython on PRI Pico](Images/MicroPython-FINAL.gif)
 
 ## 1.2. Install Python on your machine
 1. Go to [Python website](https://www.python.org/downloads/) and download the last version of Python
 2. Install the downloaded file on your machine. Make sure to add python to PATH
+
 ![Add python to PATH](Images/Capture%20d’écran%202021-05-12%20083257.jpg)
 
 ## 1.3. Setup VS Code
@@ -41,6 +43,7 @@
 2. Connect your RPI Pico with USB. The terminal will tell you on wich COM port your connected
 3. You can create a new `.py` file and write code
 4. There is buttons on the bottom of the window to run or upload code and connect the board to VS Code
+
 ![Run project](Images/Capture%20d’écran%202021-05-12%20082523.jpg)
 
 A project example can be found in the MicroPython-example branch of this repository.
@@ -54,12 +57,15 @@ A video can be found on [YouTube](https://youtu.be/mUF9xjDtFfY)
 ### 2.1.1. GCC compiler
 1. Go to [ARM website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) and download the last version
 2. Install the compiler. Make sure to check `Add path to environment variable`
+
 ![Add path to environment](Images/Capture%20d’écran%202021-05-12%20101716.jpg)
 
 ### 2.1.2. Install cMake on your computer
 1. Go to [cMake website](https://cmake.org/download/), download and install cMake for your machine
 2. During the installation, chech `Add CMake to the system PATH for all users`
+
 ![Add CMake to the system PATH](Images/Capture%20d’écran%202021-05-12%20101908.jpg)
+
 ### 2.1.3. Install C++ for Visual Studio
 1. Go to [Microsoft website](https://visualstudio.microsoft.com/fr/downloads/) and scroll to "Build Tools for Visual Studio 2019" and click on Download
 2. Run the file and select *C++ build tools* and click install
@@ -105,12 +111,16 @@ Make sure to have python installed (Step [1.2. Install Python on your machine](#
 1. Go to [Zadig website](https://zadig.akeo.ie/) and download Zadig
 2. Open Zadig and select `RP2 Boot (Interface 1)` and the `WinUSB` driver
 3. Click on Install Driver
+
 ![Install driver](Images/Capture%20d’écran%202021-05-12%20100915.jpg)
 
 ## 3.3. Start a new project
 1. Open the PIO Home window and click on `New Project`
+
 ![Open PIO Home](Images/Capture%20d’écran%202021-05-12%20090233.jpg)
+
 2. Choose a name for your project and select your board and the Arduino framework
+
 ![New PIO Project](Images/Capture%20d’écran%202021-05-12%20090459.jpg)
 
 ## 3.4. Build and upload
@@ -123,6 +133,7 @@ upload_port = E:\
 upload_protocol = picotool
 ```
 2. To buil or upload your project, the tasks can be found in the PlatformIO plug-in
+
 ![Build or Upload project](Images/Capture%20d’écran%202021-05-12%20100221.jpg)
 
 A project example can be found in the C-PlatformIO-example branch of this repository.
